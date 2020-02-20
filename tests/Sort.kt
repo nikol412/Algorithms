@@ -18,4 +18,13 @@ class Sort {
         val expect = intArrayOf(1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
+
+    @test
+    fun insertionSortTest(){
+        val array = SortAlgorithms().array
+        val actual = SortAlgorithms().insertionSort(array)
+        val expect = intArrayOf(1,2,3,4,5,6,7)
+        assertEquals(expect.asList(), actual.asList())
+    }
+
 }
