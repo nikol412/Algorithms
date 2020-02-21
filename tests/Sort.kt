@@ -14,7 +14,7 @@ class Sort {
     @test
     fun merge(){
         val array = SortAlgorithms().array
-        val actual = SortAlgorithms().mergeSort(array)
+        val actual = MergeSort().mergeSort(array)
         val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
