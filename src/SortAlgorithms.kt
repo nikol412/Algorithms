@@ -1,5 +1,5 @@
 class SortAlgorithms {
-    val array = intArrayOf(7, 6, 3, 4, 5, 2, 1)
+    val array = intArrayOf(7, 6, 5, 4, 3, 2, 1, 0)
 
     fun bubbleSort(arr: IntArray): IntArray {
         val n = arr.size

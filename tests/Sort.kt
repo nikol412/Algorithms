@@ -7,7 +7,7 @@ class Sort {
     fun bubble() {
         val array = SortAlgorithms().array
         val actual = SortAlgorithms().bubbleSort(array)
-        val expect = intArrayOf(1,2,3,4,5,6,7)
+        val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
 
@@ -15,7 +15,7 @@ class Sort {
     fun merge(){
         val array = SortAlgorithms().array
         val actual = SortAlgorithms().mergeSort(array)
-        val expect = intArrayOf(1,2,3,4,5,6,7)
+        val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
 
@@ -23,8 +23,15 @@ class Sort {
     fun insertionSortTest(){
         val array = SortAlgorithms().array
         val actual = SortAlgorithms().insertionSort(array)
-        val expect = intArrayOf(1,2,3,4,5,6,7)
+        val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
 
+    @test
+    fun selectSort(){
+        val array = SortAlgorithms().array
+        val actual = SelectSort().sort(array)
+        val expect = intArrayOf(0,1,2,3,4,5,6,7)
+        assertEquals(expect.asList(), actual.asList())
+    }
 }
