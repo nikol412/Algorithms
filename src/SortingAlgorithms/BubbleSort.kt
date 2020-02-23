@@ -1,3 +1,5 @@
+package SortingAlgorithms
+
 class BubbleSort {
     fun bubbleSort(arr: IntArray): IntArray {
         val n = arr.size

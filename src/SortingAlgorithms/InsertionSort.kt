@@ -1,3 +1,5 @@
+package SortingAlgorithms
+
 class InsertionSort {
     fun sort(intArray: IntArray): IntArray {
         for (pos in 1 until intArray.size) {

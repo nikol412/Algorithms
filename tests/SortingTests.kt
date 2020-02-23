@@ -1,8 +1,8 @@
-import kotlin.math.exp
+import SortingAlgorithms.*
 import kotlin.test.assertEquals
 import org.junit.Test as test
 
-class Sort {
+class SortingTests {
     @test
     fun bubble() {
         val array = SortAlgorithms().array
@@ -31,6 +31,14 @@ class Sort {
     fun selectSort(){
         val array = SortAlgorithms().array
         val actual = SelectSort().sort(array)
+        val expect = intArrayOf(0,1,2,3,4,5,6,7)
+        assertEquals(expect.asList(), actual.asList())
+    }
+
+    @test
+    fun quickSort(){
+        val array = SortAlgorithms().array
+        val actual = QuickSort().sort(array)
         val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }

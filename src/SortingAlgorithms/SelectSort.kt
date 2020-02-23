@@ -1,4 +1,4 @@
-import kotlin.math.max
+package SortingAlgorithms
 
 class SelectSort {
     fun sort(intArray: IntArray): IntArray {

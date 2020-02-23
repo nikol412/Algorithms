@@ -1,3 +1,5 @@
+package SortingAlgorithms
+
 class MergeSort {
     fun mergeSort(arr: IntArray): IntArray {
         if (arr.size <= 1) {
