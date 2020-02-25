@@ -28,18 +28,26 @@ class SortingTests {
     }
 
     @test
-    fun selectSort(){
+    fun selectSortMax(){
         val array = SortAlgorithms().array
-        val actual = SelectSort().sort(array)
+        val actual = SelectSort().sortMax(array)
         val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
 
     @test
-    fun quickSort(){
+    fun selectSortMin(){
         val array = SortAlgorithms().array
-        val actual = QuickSort().sort(array)
+        val actual = SelectSort().sortMin(array)
         val expect = intArrayOf(0,1,2,3,4,5,6,7)
         assertEquals(expect.asList(), actual.asList())
     }
+
+//    @test
+//    fun quickSort(){
+//        val array = SortAlgorithms().array
+//        val actual = QuickSort().sort(array)
+//        val expect = intArrayOf(0,1,2,3,4,5,6,7)
+//        assertEquals(expect.asList(), actual.asList())
+//    }
 }
